@@ -1,5 +1,27 @@
-var mobileBtn = document.getElementsByClassName('header-section__mobile-btn')
-var mobileMenu = document.getElementsByClassName('header-section__mobile-menu')
+// -- Change Header BGC on scroll -- //
+
+var className = "js-change_bgc";
+var scrollTrigger = 50;
+
+window.onscroll = function() {
+  // We add pageYOffset for compatibility with IE.
+  if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+    document.getElementsByClassName("header-mobile ")[0].classList.add(className);
+  } else {
+    document.getElementsByClassName("header-mobile ")[0].classList.remove(className);
+  }
+  
+  if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+    document.getElementsByClassName("header-desktop ")[0].classList.add(className);
+  } else {
+    document.getElementsByClassName("header-desktop ")[0].classList.remove(className);
+  }
+};
+
+// ---- //
+
+var mobileBtn = document.getElementsByClassName('header-mobile__btn')
+var mobileMenu = document.getElementsByClassName('header-mobile__menu')
 var clickedBtn = function() {
     mobileMenu[0].classList.toggle('active')
 }

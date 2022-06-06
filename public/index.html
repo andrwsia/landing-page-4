@@ -12,41 +12,48 @@
     <!-- HEADER-SECTION START -->
     <header class="header-section">
         <!-- DESKTOP START -->
-        <div class='header-section__logo'>
-            <a href="/"><img src="https://i.imgur.com/lBxyCBA.png" alt="company-img"></a>
-        </div>
-        <div class="header-section__desktop-menu">
-            <a href="/">About Us</a>
-            <a href="/">Our Service</a>
-            <a href="/">The Team</a>
-            <a href="/">Portfolio</a>
-            <a href="/"><span>Get in touch</span></a>
-        </div>
+        <div class="header-desktop">
+            <div class='header-desktop__logo'>
+                <a href="#"><img src="https://i.imgur.com/lBxyCBA.png" alt="company-img"></a>
+            </div>
+            <div class="header-desktop__menu">
+                <a href="#">About Us</a>
+                <a href="#">Our Service</a>
+                <a href="#">The Team</a>
+                <a href="#">Portfolio</a>
+                <a href="#"><span>Get in touch</span></a>
+            </div>
+        </div>        
         <!-- DESKTOP END -->
 
         <!-- MOBILE START -->
-        <div class="header-section__mobile-menu ">
-            <a href="/">About Us</a>
-            <a href="/">Our Service</a>
-            <a href="/">The Team</a>
-            <a href="/">Portfolio</a>
-            <a href="/"><span>Get in touch</span></a>
-        </div>
-        <div class="header-section__mobile-btn">
-            <div class="hamburger-icon" id="icon">
-                <div class="icon-1" id="a"></div>
-                <div class="icon-2" id="b"></div>
-                <div class="icon-3" id="c"></div>
-                <div class="clear"></div>
+        <div class="header-mobile">
+            <div class='header-mobile__logo'>
+                <a href="#"><img src="https://i.imgur.com/lBxyCBA.png" alt="company-img"></a>
             </div>
-         </div>
+            <div class="header-mobile__btn">
+                <div class="hamburger-icon" id="icon">
+                    <div class="icon-1" id="a"></div>
+                    <div class="icon-2" id="b"></div>
+                    <div class="icon-3" id="c"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="header-mobile__menu">
+                <a href="#">About Us</a>
+                <a href="#">Our Service</a>
+                <a href="#">The Team</a>
+                <a href="#">Portfolio</a>
+                <a href="#"><span>Get in touch</span></a>
+            </div>
+        </div>        
         <!-- MOBILE END -->
     </header>
     <!-- HEADER-SECTION END -->
 
     <!-- HOME-SECTION START -->
     <section id="home-section" class="home-section">
-        <div class="home-section__container container">
+        <div class="home-section__container container-fluid">
             <div class="row">
                 <div class="box"></div>
                 <div class="home-section__col1 col-12 col-md-6 order-1">
@@ -62,7 +69,7 @@
                     <div class="signup">
                         <div class="input-email">
                             <input type="text" name="email_address" placeholder="Email address">
-                            <a href="/"><i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -91,22 +98,22 @@
                         <p>Proud Partner at Hubspot & Segment</p>    
                     </div>
                 </div>
-                <div class="partners-logo col-3 col-sm-2">
+                <div class="partners-logo col col-sm-2">
                     <div class="logo">
                         <img src="https://i.imgur.com/VxAoqop.png" alt="woocommerce">
                     </div>
                 </div>
-                <div class="partners-logo col-3 col-sm-2">
+                <div class="partners-logo col col-sm-2">
                     <div class="logo">
                         <img src="https://i.imgur.com/KOAdgEB.png" alt="salesforce">
                     </div>
                 </div>
-                <div class="partners-logo col-3 col-sm-2">
+                <div class="partners-logo col col-sm-2">
                     <div class="logo">
                         <img src="https://i.imgur.com/wDAeFtz.png" alt="shopify">
                     </div>    
                 </div>
-                <div class="partners-logo col-3 col-sm-2">
+                <div class="partners-logo col col-sm-2">
                     <div class="logo">
                         <img src="https://i.imgur.com/iaHLv0X.png" alt="mailchimp">
                     </div>
@@ -121,28 +128,32 @@
     <section class="achieve_more-section" id="achieve_more-section">
         <div class="achieve_more-section__container container-fluid">
             <div class="row">
-                <div class="achieve-more-section__col1 col-12 col-md-4">
+                <div class="achieve-more-section__main col-12 col-md-12 col-lg-4">
                     <div class="info">
-                        <p>Achieve More</p>
-                        <p>Purpose of a  convoy is to keep  your team</p>    
+                        <p class="subtitle">Achieve More</p>
+                        <p class="title">Purpose of a  convoy is to keep  your team</p>    
                     </div>
                 </div>
-                <div class="achieve-more-section__col2 col-12 col-sm-6 col-md-4">
-                    <div class="info">
-                        <i class="fa-solid fa-chart-column"></i>
-                    </div>
-                    <div class="info">
-                        <p>Built for impact</p>
-                        <p>We identify and nuture a   diverse team of designers,  developers and marketers</p>
+                <div class="achieve-more-section__sub col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="row">
+                        <div class="icon col-2">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+                        <div class="info col-10">
+                            <p class="title">Built for impact</p>
+                            <p class="description">We identify and nuture a   diverse team of designers,  developers and marketers</p>
+                        </div>    
                     </div>
                 </div>
-                <div class="achieve-more-section__col2 col-12 col-sm-6 col-md-4">
-                    <div class="info">
-                        <i class="fa-solid fa-rotate"></i>    
-                    </div>
-                    <div class="info">
-                        <p>In sync with you</p>
-                        <p>We work the way you do by adapting  to your workflows and rhythm we blend.</p>
+                <div class="achieve-more-section__sub col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="row">
+                        <div class="icon col-2">
+                            <i class="fa-solid fa-rotate"></i> 
+                        </div>
+                        <div class="info col-10">
+                            <p class="title">In sync with you</p>
+                            <p class="description">We work the way you do by adapting  to your workflows and rhythm we blend.</p>
+                        </div>    
                     </div>
                 </div>
             </div>
@@ -183,7 +194,7 @@
                 </div>
                 <div class="work_process-section__button col-12">
                     <div class="button">
-                        <a href="/">Become a partner</a>
+                        <a href="#">Become a partner</a>
                     </div> 
                 </div>
             </div>
@@ -194,7 +205,7 @@
 
     <!-- SCHEDULE-SECTION START-->
     <section class="schedule-section" id="schedule-section">
-        <div class="schedule-section__container container">
+        <div class="schedule-section__container container-fluid">
             <div class="schedule-section__row row">
                 <div class="schedule-section__preview col-12 col-md-6">
                     <div class="bg-image">
@@ -230,75 +241,13 @@
                         <p class="subtitle">Schedule</p>
                         <p class="title">Great customer <br> relationship starts here</p>
                         <p class="description">80 days around the world, we'll find a pot of gold at the end. Time will fight against space, and we'll fly to mars in the wind.</p>
-                        <a class="button" href="/">Learn more<i class="fa-solid fa-arrow-right"></i></a>
+                        <a class="button" href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>    
             </div>
         </div>
     </section>
     <!-- SCHEDULE-SECTION END -->
-
-    <!-- MONITOR-SECTION START -->
-    <!-- <section class="monitor-section" id="monitor-section">
-        <div class="monitor-section__container container">
-            <div class="monitor-section__row row">
-                <div class="monitor-section__info col-12 col-md-6">
-                    <div class="info">
-                        <p class="subtitle">Monitor</p>
-                        <p class="title">Introducing best mobile <br> carousels</p>
-                        <p class="description">Before the ship is high, we'll find a pot of gold at the end. Reluctant however understand, and we'll fly to pond in the around the world.</p>
-                        <a class="button" href="/">Learn more<i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="monitor-section__preview col-12 col-md-6">
-                    <div class="bg-img">
-                        <div class="lg-box">
-                            <div class="section-one">
-                                <p>Discover new opportunities</p>
-                                <p class="fe"><i class="fa-solid fa-circle-exclamation"></i></p>
-                            </div>
-                            <div class="section-two">
-                                <img src="https://i.imgur.com/PVmUBuu.png?1" alt="percentage-bar">
-                                <p class="n0">0%</p>
-                                <p class="n734">73.4%</p>
-                                <p class="n100">100%</p>
-                            </div>
-                            <div class="section-three">
-                                <p class="title">Latest Products</p>
-                                <p class="description">We design solutions for <br> digital interactions</p>
-                            </div>
-                            <div class="section-four">
-                                <div class="row1">
-                                    <p class="wb">Wallet Balance</p>   
-                                    <p class="price1">$4,982.00</p>
-                                </div>
-                                <div class="row2">
-                                    <p class="pm">Per month</p>
-                                    <p class="price2">+$428</p>    
-                                </div>
-                            </div>
-                            <div class="left-btn"><i class="fa-solid fa-arrow-left-long"></i></div>
-                            <div class="right-btn"><i class="fa-solid fa-arrow-right-long"></i></div>
-                        </div>
-                        <div class="md-box">
-                            <img src="/public/img/desk-img.jpg" alt="desk-image" />
-                            <span class="bar1"></span>
-                            <span class="bar2"></span>
-                            <span class="bar3"></span>
-                            <span class="circle"></span>
-                            <span class="circle"></span>
-                            <span class="circle"></span>
-                        </div>
-                        <div class="sm-box">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <i class="fa-solid fa-chart-pie"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- MONITOR-SECTION END -->
 
     <!-- PRICING-SECTION START -->
     <section class="pricing-section" id="pricing-section">
@@ -328,7 +277,7 @@
                     </div>
                     <div class="call-to-action">
                         <p>Ready to get started?</p>
-                        <a href="/">Get Started</a>
+                        <a href="#">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -346,7 +295,7 @@
                             <p class="info">Discuss your goals, determine success metrics, identify problems</p>
                             <p class="benefit"><i class="fa-solid fa-circle-check"></i>UX design content strategy</p>
                             <p class="benefit"><i class="fa-solid fa-circle-check"></i>Development bring</p>
-                            <a href="/">Get started</a>
+                            <a href="#">Get started</a>
                         </div>
                     </div>
                     <div class="services-section__col2 col-12 col-lg-6">
@@ -356,7 +305,7 @@
                                     <i class="fa-solid fa-layer-group"></i>
                                     <p class="title">Web Design</p>
                                     <p class="info">One for all and all for one, Musk are always prepared</p>
-                                    <a href="/"> Learn More</a>
+                                    <a href="#"> Learn More</a>
                                 </div>
                             </div>
                             <div class="service-box__col col-12 col-sm-6">
@@ -364,7 +313,7 @@
                                     <i class="fa-solid fa-lightbulb"></i>
                                     <p class="title">Ad-Creatives</p>
                                     <p class="info">One for all and all for one, Musk are always prepared</p>
-                                    <a href="/"> Learn More</a>
+                                    <a href="#"> Learn More</a>
                                 </div>
                             </div> 
                             <div class="service-box__col col-12 col-sm-6">
@@ -372,7 +321,7 @@
                                     <i class="fa-solid fa-gear"></i>
                                     <p class="title">Automation</p>
                                     <p class="info">One for all and all for one, Musk are always prepared</p>
-                                    <a href="/"> Learn More</a>
+                                    <a href="#"> Learn More</a>
                                 </div>
                             </div> 
                             <div class="service-box__col col-12 col-sm-6">
@@ -380,7 +329,7 @@
                                     <i class="fa-solid fa-chart-pie"></i>
                                     <p class="title">Infographics</p>
                                     <p class="info">One for all and all for one, Musk are always prepared</p>
-                                    <a href="/"> Learn More</a>
+                                    <a href="#"> Learn More</a>
                                 </div>
                             </div>  
                         </div>
@@ -447,7 +396,7 @@
                             <div class="signup">
                                 <div class="input-email">
                                     <input type="text" name="email_address" placeholder="Email address">
-                                    <a href="/"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <a href="#"><span><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -460,50 +409,50 @@
 
     <!-- FOOTER-SECTION START -->
     <footer class="footer-section" id="footer-section">
-        <div class="footer-section__container container">
+        <div class="footer-section__container container-fluid">
             <div class="footer-section__row row">
-                <div class="footer-section__col col-12 col-md-4">
+                <div class="footer-section__col col-12 col-sm-12 col-md-4">
                     <div class="main-info">
                         <p class="co-name">Company Name</p>
                         <p class="description">The copy warned the little blind text, that where it came from it would have been rewritten a thousand times.</p>
-                        <a class="socials" href="/">
+                        <a class="socials" href="#">
                             <i class="fa-brands fa-facebook-square"></i>
                             <i class="fa-brands fa-twitter-square"></i>
                             <i class="fa-brands fa-linkedin"></i>   
                         </a>
                     </div>
                 </div>
-                <div class="footer-section__col  col-3 col-md-2">
+                <div class="footer-section__col  col-6 col-sm-3 col-md-2">
                     <div class="info">
                         <p class="title">Company</p>
-                        <a class="links" href="/">About</a>
-                        <a class="links" href="/">Terms of Use</a>
-                        <a class="links" href="/">Privacy Policy</a>
-                        <a class="links" href="/">How it Works</a>
-                        <a class="links" href="/">Contact Us</a>
+                        <a class="links" href="#">About</a>
+                        <a class="links" href="#">Terms of Use</a>
+                        <a class="links" href="#">Privacy Policy</a>
+                        <a class="links" href="#">How it Works</a>
+                        <a class="links" href="#">Contact Us</a>
                     </div>
                 </div>
-                <div class="footer-section__col col-3 col-md-2">
+                <div class="footer-section__col col-6 col-sm-3 col-md-2">
                     <div class="info">
                         <p class="title">Get Help</p>
-                        <a class="links" href="/">Support Carrier</a>
-                        <a class="links" href="/">24hr Service</a>
-                        <a class="links" href="/">Quick Chat</a>
+                        <a class="links" href="#">Support Carrier</a>
+                        <a class="links" href="#">24hr Service</a>
+                        <a class="links" href="#">Quick Chat</a>
                     </div>
                 </div>
-                <div class="footer-section__col col-3 col-md-2">
+                <div class="footer-section__col col-6 col-sm-3 col-md-2">
                     <div class="info">
                         <p class="title">Support</p>
-                        <a class="links" href="/">Business</a>
-                        <a class="links" href="/">Policy</a>
-                        <a class="links" href="/">FAQ</a>
+                        <a class="links" href="#">Business</a>
+                        <a class="links" href="#">Policy</a>
+                        <a class="links" href="#">FAQ</a>
                     </div>
                 </div>
-                <div class="footer-section__col col-3 col-md-2">
+                <div class="footer-section__col col-6 col-sm-3 col-md-2">
                     <div class="info">
                         <p class="title">Contact</p>
-                        <a class="links" href="/">WhatsApp</a>
-                        <a class="links" href="/">Support24</a>
+                        <a class="links" href="#">WhatsApp</a>
+                        <a class="links" href="#">Support24</a>
                     </div>
                 </div>
             </div>
