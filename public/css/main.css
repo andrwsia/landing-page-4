@@ -8366,6 +8366,7 @@ progress {
 .footer-section .footer-section__container .footer-section__row .footer-section__col .main-info .description {
   color: var(--gray2-color);
   font-size: 0.85rem;
+  max-width: 75%;
 }
 .footer-section .footer-section__container .footer-section__row .footer-section__col .main-info .socials {
   text-decoration: none;
