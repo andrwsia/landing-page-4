@@ -64,17 +64,23 @@ body {
                 .signup-form {
                     display: flex;
                     flex-direction: column;   
-                    
-                    input {
-                        margin: 10px 0;
-                        padding: 10px 0;
-                        outline: none;
-                        border: none;
-                        border-bottom: 1px solid gray;
+
+                    p {
+                        color: gray;
+                        font-size: .85rem;
+                        margin-top: 10px
                     }
 
-                    input:nth-child(3) {
-                        padding-bottom: 50px;
+                    hr {
+                        @include padding_margin-reset;
+                       border-bottom: 1px solid gray; 
+                       margin-bottom: 20px;
+                    }
+
+                    input {
+                        margin: 10px 0;
+                        outline: none;
+                        border: none;
                     }
 
                 }
@@ -232,7 +238,7 @@ body {
         }
     }
 }
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 400px) {
     .landing-page {
         .landing-page__container {
             margin: 0;

@@ -131,15 +131,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+.landing-page .landing-page__container .landing-page__signup .signup-container .signup-form p {
+  color: gray;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+.landing-page .landing-page__container .landing-page__signup .signup-container .signup-form hr {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
 .landing-page .landing-page__container .landing-page__signup .signup-container .signup-form input {
   margin: 10px 0;
-  padding: 10px 0;
   outline: none;
   border: none;
-  border-bottom: 1px solid gray;
-}
-.landing-page .landing-page__container .landing-page__signup .signup-container .signup-form input:nth-child(3) {
-  padding-bottom: 50px;
 }
 .landing-page .landing-page__container .landing-page__signup .signup-container .button {
   margin: 25px 0px;
@@ -264,7 +270,7 @@ body {
     grid-template-rows: auto auto;
   }
 }
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 400px) {
   .landing-page .landing-page__container {
     margin: 0;
   }
