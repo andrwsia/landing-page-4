@@ -131,11 +131,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.landing-page .landing-page__container .landing-page__signup .signup-container .signup-form p {
-  color: gray;
-  font-size: 0.85rem;
-  margin-top: 10px;
-}
 .landing-page .landing-page__container .landing-page__signup .signup-container .signup-form hr {
   padding: 0;
   margin: 0;
@@ -270,7 +265,7 @@ body {
     grid-template-rows: auto auto;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .landing-page .landing-page__container {
     margin: 0;
   }
